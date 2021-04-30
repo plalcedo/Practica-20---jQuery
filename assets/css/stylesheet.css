@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 20px;
+    margin: 25px;
+    background-color: darkcyan;
+    color: white;
+    border: transparent;
+}
+
+header {
+    height: auto;
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav {
+    width: auto;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.cuadro {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+#btnMenu {
+    margin-right: 10px;
+    padding: 15px;
+    display: none;
+    font-size: 1.5rem;
+}
+
+#hiddenMenu {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: darkcyan;
+}
+
+#hiddenMenu ul li {
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+}
+
+#hiddenMenu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menuContacto {
+    background-color: gray;
+    color: white;
+    display: none;
+    justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+    .elementMenu {
+        display: none;
+    }
+    #btnMenu {
+        display: block;
+    }
+}
+
+@media (min-width: 641px) {
+    #hiddenMenu {
+        display: none;
+    }
+}
