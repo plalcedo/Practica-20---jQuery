@@ -45,6 +45,29 @@ nav a:hover {
     color: black;
 }
 
+section {
+    padding: 50px;
+    background-color: silver;
+    height: 200px;
+    overflow: scroll;
+}
+
+span {
+    color: brown;
+    display: none;
+}
+
+input {
+    margin: 35px;
+    font-size: 2rem;
+    border: transparent;
+}
+
+input:focus {
+    border: gray 3px solid;
+    border-radius: 5px;
+}
+
 .cuadro {
     width: 200px;
     height: 200px;
@@ -53,6 +76,21 @@ nav a:hover {
 
 .rojo {
     background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.notificacion {
+    padding: 30px;
+    background-color: green;
+    color: white;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 9999;
+    border-radius: 5px;
 }
 
 #btnMenu {
