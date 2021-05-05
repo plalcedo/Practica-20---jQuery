@@ -82,6 +82,14 @@ input:focus {
     background-color: green;
 }
 
+.azul {
+    background-color: royalblue;
+}
+
+.negro {
+    background-color: black;
+}
+
 .notificacion {
     padding: 30px;
     background-color: green;
@@ -91,6 +99,25 @@ input:focus {
     right: 1%;
     z-index: 9999;
     border-radius: 5px;
+}
+
+.inputGood {
+    box-shadow: green 0 0 10px;
+}
+
+.inputBad {
+    box-shadow: red 0 0 10px;
+}
+
+.inputFocus {
+    box-shadow: purple 0 0 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #btnMenu {
@@ -125,6 +152,13 @@ input:focus {
     color: white;
     display: none;
     justify-content: flex-end;
+}
+
+#circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 @media (max-width: 640px) {
