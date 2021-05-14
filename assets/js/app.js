@@ -222,4 +222,12 @@ $("#input1").focusout(() => {
     $("#input1").removeClass("inputFocus");
 });
 
-/* Expresiones regulares  */
+
+/* Pseudoclases */
+
+var menuItems = ["Home", "About", "Products", "Contact"];
+$("#llenarMenu").click(() => {
+    for (var i = 0; i < menuItems.length; i++) {
+        $("#menu li:nth-child(" + (i + 1) + ")").append('<a href="#">' + menuItems[i] + '</a>');
+    }
+});
